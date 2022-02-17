@@ -10,7 +10,7 @@ rl.once("line", line => {
 });
 
 const sim = s => {
-  const parts = [[[]], [[]], [[]]];
+  const parts = [[[]], [[]]];
   let currPart = 1;
   
   for (let i = 0; i < s.length; i++) {
@@ -39,7 +39,7 @@ const sim = s => {
       }
     }
     else if (c === "]") {
-      currPart = 2;
+      currPart = 1;
     }
     else {
       parts[currPart][parts[currPart].length-1].push(c);
