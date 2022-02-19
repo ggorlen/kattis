@@ -1,8 +1,8 @@
 import Control.Monad (replicateM)
-import Data.List (sort, sortBy, groupBy)
+import Data.List (nub, sort, sortBy, groupBy)
 
 allUniqueChars :: [Char] -> Bool
-allUniqueChars xs = (length $ groupBy (\x y -> x == y) $ sort xs) == length xs
+allUniqueChars xs = (length $ nub xs) == length xs
 
 comparator :: [Char] -> [Char] -> Ordering
 comparator x y =
