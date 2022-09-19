@@ -3,20 +3,24 @@ use std::io::{self, BufRead};
 fn main() {
     let stdin = io::stdin();
     let mut iterator = stdin.lock().lines();
-    let meta = iterator.next().unwrap().unwrap();
-    let split: Vec<&str> = meta.split_whitespace().collect();
-    let w = split[1].parse::<i32>().unwrap();
-    let h = split[2].parse::<i32>().unwrap();
-    let s = w * w + h * h;
+    let split: Vec<i32> = iterator
+        .next().unwrap().unwrap()
+        .split_whitespace()
+        .map(|s| s.parse().unwrap())
+        .collect();
 
-    for line in iterator {
-        let length = line.unwrap().parse::<i32>().unwrap();
+    if let [_, w, h] = split[..] {
+        let s = w * w + h * h;
 
-        if length * length <= s {
-            println!("DA");
-        }
-        else {
-            println!("NE");
+        for line in iterator {
+            let length = line.unwrap().parse::<i32>().unwrap();
+
+            if length * length <= s {
+                println!("DA");
+            }
+            else {
+                println!("NE");
+            }
         }
     }
 }
