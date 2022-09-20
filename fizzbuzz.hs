@@ -12,6 +12,7 @@ printFizzBuzzToN x y n =
         printFizzBuzzToN x y (n - 1)
         putStrLn (fizzBuzz x y n)
 
+main :: IO ()
 main = do
     line <- getLine
     let splitLine = words line
