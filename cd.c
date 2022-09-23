@@ -3,7 +3,8 @@
 #include <string.h>
 
 int main() {
-    char *counts = calloc(1000000000, 1);
+    const int limit = 1000000000;
+    char *counts = calloc(limit, 1);
 
     for (;;) {
         int n, m;
@@ -27,7 +28,8 @@ int main() {
         }
 
         printf("%d\n", dupes);
-        memset(counts, 0, max + 1);
+        ++max;
+        memset(counts, 0, max > limit ? limit : max);
     }
 
     return 0;
