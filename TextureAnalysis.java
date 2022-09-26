@@ -3,7 +3,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class TextureAnalysis {
+public class textureanalysis {
     public static void main(String[] args) throws java.io.IOException {
         var sc = new BufferedReader(new InputStreamReader(System.in));
         var dc = new BufferedWriter(new OutputStreamWriter(System.out));

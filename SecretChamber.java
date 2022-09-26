@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Stack;
 
-class SecretChamber {
+class secretchamber {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
         int numTranslations = scanner.nextInt();

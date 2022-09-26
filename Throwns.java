@@ -1,4 +1,4 @@
-public class Throwns {
+public class throwns {
     public static void main(String[] args) {
         var sc = new java.util.Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine().split(" ")[0]);
