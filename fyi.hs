@@ -1,7 +1,6 @@
-{-# LANGUAGE OverloadedStrings #-}
-import Data.Text as T
+import Data.List
 
 main :: IO ()
 main = do
     line <- getLine
-    print $ if T.isPrefixOf "555" (T.pack line) then 1 else 0
+    print $ if isPrefixOf "555" line then 1 else 0
