@@ -1,4 +1,6 @@
 open System
 
 let line = Console.ReadLine().Split ' '
-Console.WriteLine(if line.[0] > line.[1] then 1 else 0)
+let a = int64 line.[0]
+let b = int64 line.[1]
+Console.WriteLine(if a > b then 1 else 0)
