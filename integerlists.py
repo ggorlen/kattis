@@ -27,16 +27,18 @@ def main():
             next(stdin)
             continue
 
-        x = next(stdin)[1:-2].split(",")
+        x = next(stdin)[1:-2].split(",", n - trim_from_rear)
 
         if trim_from_rear > 0:
-            x = x[trim_from_front:-trim_from_rear]
-        elif trim_from_front > 0:
+            x.pop()
+
+        if trim_from_front > 0:
             x = x[trim_from_front:]
 
-        print("[", end="")
         if not forward:
             x = reversed(x)
+
+        print("[", end="")
         print(",".join(x), end="")
         print("]")
 
