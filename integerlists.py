@@ -38,9 +38,7 @@ def main():
         if not forward:
             x = reversed(x)
 
-        print("[", end="")
-        print(",".join(x), end="")
-        print("]")
+        print("[", ",".join(x), "]", sep="")
 
 
 if __name__ == "__main__":
