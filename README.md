@@ -1,4 +1,5 @@
 # kattis
 
 - [Problem ratings](http://ozark.hendrix.edu/~yorgey/kattis.html)
+- [Blog about Haskell and Kattis](https://byorgey.wordpress.com/tag/kattis/)
 - [Fast Python I/O](https://mwermelinger.github.io/kattis-guide/input.html)
