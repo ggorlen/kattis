@@ -1,4 +1,5 @@
-# wrong answer
+# wrong answer, not sure what I'm missing
+
 use strict;
 use warnings;
 
@@ -17,6 +18,7 @@ for (@eastern) {
         exit;
     }
 }
+
 for (@northern) {
     if ($_ > $northern[-1]) {
         print "impossible\n";
