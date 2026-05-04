@@ -1,8 +1,7 @@
--- crashes on test case 4, can I fuzz test the inputs? or rewrite in a normal lang
+-- crashes on test case 4, can I fuzz test the inputs? rewriting in python worked, but curious what the problem is here
 
 import Data.Char (chr, ord)
 import Data.List (intercalate)
-import qualified Data.Text as T
 
 toInt :: String -> Int
 toInt x = read x :: Int
